@@ -25,7 +25,14 @@ define('DB_USER', 'db_user');
 define('DB_PASS', 'db_pass');
 define('DB_DRIVER', 'db_driver');
 ```
-
+DB queries will also needed to be added as env variables as they may contain confidential info. 
+```
+define('getProductionDataQuery', '...');
+define('getCasesOpenedDataQuery', '...');
+define('getCasesFiledDataQuery', '...');
+define('getInvoiceDataQuery', '...');
+define('getProductionRangesQuery', '...');
+```
 ### Create a new report
 
 ```new Reports($weeks , $range_threshold , $interest);```
